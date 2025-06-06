@@ -2,166 +2,75 @@
 {% load otree static %}
 
 {% block title %}
-
     Instrucciones
 {% endblock %}
 
 {% block content %}
 
-    <!--b>Todo</b>
-    <p>Add specific Experiment instructions here, this will only be shown before round 1!</p-->
-      
-    <b></b>
-    <p>
-       
-        <br>
-¡Bienvenido(a)!
-<br>
-<br>
-Gracias por participar en este experimento presencial.
-<br>
-<br>
-Durante la actividad, asumirás el rol de un inversionista que opera en un mercado financiero. En cada periodo, recibirás una noticia y podrás observar el comportamiento del precio de un activo. En base a esa información, tomarás decisiones estratégicas sobre si comprar, vender o mantener tus acciones, con el objetivo de maximizar el valor de tu portafolio.
-<br>
-<br>
-Tu participación es fundamental para esta investigación.
-<br>
-<br>
-Además, recibirás una recompensa económica en efectivo según tu desempeño.
-<br>
-<br>
-Agradecemos tu compromiso y te animamos a tomar decisiones como si estuvieras gestionando tu propio dinero.
-<br>
-<br>
-¡Éxitos en el experimento! 
-<br>
-<br>
+<h2>¡Bienvenido(a)!</h2>
 
-        Vas a participar en una tarea de trading interactiva a través de una plataforma basada en navegador. La actividad está dividida en dos etapas:
- 
-1.	Etapa de entrenamiento
-<br>
-<br>
-•	Duración: 5 periodos 
-<br>
-•	Tiempo por periodo: 30 segundos
-<br>
-•	Objetivo: Familiarizarte con la plataforma y entender cómo operar.
-<br>
-•	Portafolio inicial: 1000 unidades monetarias
-<br>
-•	0 en acciones (activo de riesgo)
-<br>
-•	1000 en efectivo (activo seguro)
-<br>
-<br>
-2.	Etapa Principal
-<br>
-<br>
-•	Duración: 40 periodos
-<br>
-•	Tiempo por periodo: 25 segundos
-<br>
-•	Objetivo: Obtener el mejor rendimiento posible.
-<br>
-•	Portafolio inicial: Igual al de entrenamiento 
-<br>
-<br>
-1.	Gráfico del Precio (Sección 1)
-<br>
-<br>
-•	Muestra la evolución del precio de la acción durante los periodos.
-<br>
-•	El eje y se ajusta automáticamente según el precio actual.
-<br>
-•	El gráfico muestra solo precios pasados y el actual, no predice el futuro
-<br>
-<br>
-2.	Información del portafolio (Sección 2)
-<br>
-<br>
-Aquí verás:
-<br>
-•	Efectivo disponible
-<br>
-•	Número de acciones que posees
-<br>
-•	Valor total de tus acciones (precio actual × cantidad)
-<br>
-•	Valor total del portafolio (Efectivo + Valor total de tus acciones)
-<br>
-•	Ganancia o pérdida acumulada 
-<br>
-<br>
-3.	Panel de Operaciones (sección 3)
-<br>
-<br>
-Puedes realizar las siguientes acciones:
-<br>
-•	Comprar o vender 1, 3 o 5 acciones con un solo click
-<br>
-•	Ver el precio actual de la acción
-<br>
-•	No se permite vender en corto
-<br>
-•	Puedes operar siempre que tengas suficiente efectivo
-<br>
-•	Puedes realizar varias acciones en un mismo periodo
-<br>
-<br>
-4.	Noticias (Sección 4)
-<br>
-<br>
-•	Cada periodo incluye una noticia que puede influir en tu decisión.
-<br>
-•	En entrenamiento, las noticias tendrán sugerencias.
-<br>
-•	En la ronda principal, solo se mostrará la noticia sin ayuda adicional.
-<br>
-<br>
-Tu Tarea
-<br>
-<br>
-En cada periodo, deberás decidir si:
-<br>
-•	Comprar acciones
-<br>
-•	Vender acciones
-<br>
-•	No hacer nada (mantener tu portafolio)
-<br>
-Debes tomar tus decisiones en base a:
-<br>
-•	El dinero y acciones que tienes
-<br>
-•	El precio actual
-<br>
-•	Las noticias del periodo
+<p>Gracias por participar en este experimento presencial.</p>
 
-<br>
-<br>
-Compensación:
-<br>
-<br>
-Al finalizar el experimento, recibirás una compensación económica basada en tu rendimiento durante la Etapa Principal.
+<p>En este juego serás un <strong>inversionista en un mercado financiero</strong>.</p>
+<p>En cada ronda recibirás <strong>una noticia informativa</strong> y verás cómo cambia el <strong>precio de un activo</strong>.</p>
+<p>Con esa información, decidirás si <strong>compras, vendes o mantienes</strong> acciones.</p>
 
-Tu objetivo es maximizar tus ganancias a lo largo de los 40 periodos de esta ronda.
+<h3>¿Cómo funciona?</h3>
+<ul>
+  <li>Si crees que el precio subirá, puedes <strong>comprar</strong> 1, 3 o 5 acciones.</li>
+  <li>Si crees que el precio bajará, puedes <strong>vender</strong> las acciones que tengas (también de a 1, 3 o 5).</li>
+  <li>Si no estás seguro, puedes <strong>no hacer nada</strong>.</li>
+</ul>
 
-Compensación final: S/ 5.00 + (Ganancia acumulada × Tipo de cambio)
+<p><strong>Tu objetivo:</strong> ganar la mayor cantidad posible aumentando el valor de tu portafolio.</p>
 
-Monto fijo por participar: S/ 5.00
+<h3>Entrenamiento (5 rondas)</h3>
+<p>Ahora harás una ronda de práctica con:</p>
+<ul>
+  <li>5 periodos de 45 segundos cada uno.</li>
+  <li>Un portafolio inicial de <strong>1000 unidades monetarias (u.m.)</strong>, todo en efectivo.</li>
+  <li>Puedes comprar, vender o mantener sin afectar tu resultado final.</li>
+</ul>
 
-Tipo de cambio: 0.01
+<p style="color:darkred;"><strong>Recuerda:</strong> esta etapa <u>no cuenta para tu compensación</u>, pero te ayudará a practicar y conocer la dinámica.</p>
 
+<h3>¿Qué verás en pantalla?</h3>
 
-<!--Your combined performance in the two main rounds determines your compensation. -->
-        <br>
-    </p>
+<ol>
+  <li>
+    <strong>Noticias (parte superior):</strong><br>
+    Una nueva noticia en cada ronda. 
+    <span style="color:darkred;"><u><strong>Debes leerla siempre</strong></u></span>. 
+    Aunque no esté directamente relacionada con el precio, forma parte del entorno del mercado y puede ayudarte a pensar como un inversionista real.
+  </li><br>
 
-    <img src="{% static "images/interface.png" %}" alt="Trading Interface" width=100%> 
+  <li>
+    <strong>Gráfico de precios:</strong><br>
+    Muestra cómo ha variado el precio del activo.<br>
+    <em>Sólo incluye precios pasados y el precio actual. No predice el futuro.</em>
+  </li><br>
 
-    <!--p><i>To change this page's content adjust the html of the /ZTS/InstructionPage.html file.</i></p-->
+  <li>
+    <strong>Tu portafolio:</strong><br>
+    - Efectivo disponible<br>
+    - Acciones que tienes<br>
+    - Valor de tus acciones (precio actual × cantidad)<br>
+    - Valor total del portafolio = efectivo + valor de tus acciones<br>
+    - Ganancia/pérdida acumulada = valor actual – 1000
+  </li><br>
 
-    {% next_button %}
+  <li>
+    <strong>Panel de decisiones:</strong><br>
+    - Compra o vende 1, 3 o 5 acciones<br>
+    - Verás el precio actual del activo<br>
+    - Sólo puedes comprar si tienes efectivo<br>
+    - Sólo puedes vender si tienes acciones<br>
+    - Puedes hacer varias operaciones por ronda
+  </li>
+</ol>
+
+<p><strong>Aunque esta etapa es solo de práctica,</strong> juégala como si fuera real. Te servirá para prepararte mejor para la siguiente etapa, donde <u>sí ganarás dinero real</u>.</p>
+
+{% next_button %}
 
 {% endblock %}
