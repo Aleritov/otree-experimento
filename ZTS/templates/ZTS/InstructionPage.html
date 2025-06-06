@@ -1,0 +1,167 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+
+    Instrucciones
+{% endblock %}
+
+{% block content %}
+
+    <!--b>Todo</b>
+    <p>Add specific Experiment instructions here, this will only be shown before round 1!</p-->
+      
+    <b></b>
+    <p>
+       
+        <br>
+¡Bienvenido(a)!
+<br>
+<br>
+Gracias por participar en este experimento presencial.
+<br>
+<br>
+Durante la actividad, asumirás el rol de un inversionista que opera en un mercado financiero. En cada periodo, recibirás una noticia y podrás observar el comportamiento del precio de un activo. En base a esa información, tomarás decisiones estratégicas sobre si comprar, vender o mantener tus acciones, con el objetivo de maximizar el valor de tu portafolio.
+<br>
+<br>
+Tu participación es fundamental para esta investigación.
+<br>
+<br>
+Además, recibirás una recompensa económica en efectivo según tu desempeño.
+<br>
+<br>
+Agradecemos tu compromiso y te animamos a tomar decisiones como si estuvieras gestionando tu propio dinero.
+<br>
+<br>
+¡Éxitos en el experimento! 
+<br>
+<br>
+
+        Vas a participar en una tarea de trading interactiva a través de una plataforma basada en navegador. La actividad está dividida en dos etapas:
+ 
+1.	Etapa de entrenamiento
+<br>
+<br>
+•	Duración: 5 periodos 
+<br>
+•	Tiempo por periodo: 30 segundos
+<br>
+•	Objetivo: Familiarizarte con la plataforma y entender cómo operar.
+<br>
+•	Portafolio inicial: 1000 unidades monetarias
+<br>
+•	0 en acciones (activo de riesgo)
+<br>
+•	1000 en efectivo (activo seguro)
+<br>
+<br>
+2.	Etapa Principal
+<br>
+<br>
+•	Duración: 40 periodos
+<br>
+•	Tiempo por periodo: 25 segundos
+<br>
+•	Objetivo: Obtener el mejor rendimiento posible.
+<br>
+•	Portafolio inicial: Igual al de entrenamiento 
+<br>
+<br>
+1.	Gráfico del Precio (Sección 1)
+<br>
+<br>
+•	Muestra la evolución del precio de la acción durante los periodos.
+<br>
+•	El eje y se ajusta automáticamente según el precio actual.
+<br>
+•	El gráfico muestra solo precios pasados y el actual, no predice el futuro
+<br>
+<br>
+2.	Información del portafolio (Sección 2)
+<br>
+<br>
+Aquí verás:
+<br>
+•	Efectivo disponible
+<br>
+•	Número de acciones que posees
+<br>
+•	Valor total de tus acciones (precio actual × cantidad)
+<br>
+•	Valor total del portafolio (Efectivo + Valor total de tus acciones)
+<br>
+•	Ganancia o pérdida acumulada 
+<br>
+<br>
+3.	Panel de Operaciones (sección 3)
+<br>
+<br>
+Puedes realizar las siguientes acciones:
+<br>
+•	Comprar o vender 1, 3 o 5 acciones con un solo click
+<br>
+•	Ver el precio actual de la acción
+<br>
+•	No se permite vender en corto
+<br>
+•	Puedes operar siempre que tengas suficiente efectivo
+<br>
+•	Puedes realizar varias acciones en un mismo periodo
+<br>
+<br>
+4.	Noticias (Sección 4)
+<br>
+<br>
+•	Cada periodo incluye una noticia que puede influir en tu decisión.
+<br>
+•	En entrenamiento, las noticias tendrán sugerencias.
+<br>
+•	En la ronda principal, solo se mostrará la noticia sin ayuda adicional.
+<br>
+<br>
+Tu Tarea
+<br>
+<br>
+En cada periodo, deberás decidir si:
+<br>
+•	Comprar acciones
+<br>
+•	Vender acciones
+<br>
+•	No hacer nada (mantener tu portafolio)
+<br>
+Debes tomar tus decisiones en base a:
+<br>
+•	El dinero y acciones que tienes
+<br>
+•	El precio actual
+<br>
+•	Las noticias del periodo
+
+<br>
+<br>
+Compensación:
+<br>
+<br>
+Al finalizar el experimento, recibirás una compensación económica basada en tu rendimiento durante la Etapa Principal.
+
+Tu objetivo es maximizar tus ganancias a lo largo de los 40 periodos de esta ronda.
+
+Compensación final: S/ 5.00 + (Ganancia acumulada × Tipo de cambio)
+
+Monto fijo por participar: S/ 5.00
+
+Tipo de cambio: 0.01
+
+
+<!--Your combined performance in the two main rounds determines your compensation. -->
+        <br>
+    </p>
+
+    <img src="{% static "images/interface.png" %}" alt="Trading Interface" width=100%> 
+
+    <!--p><i>To change this page's content adjust the html of the /ZTS/InstructionPage.html file.</i></p-->
+
+    {% next_button %}
+
+{% endblock %}

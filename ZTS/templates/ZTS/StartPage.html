@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Inicio de Ronda
+{% endblock %}
+
+{% block content %}
+
+    <p>Presione el botón "Siguiente" para continuar con la ronda {{subsession.round_number}}/{{session.num_rounds}} del experimento cuando se encuentre listo!</p>
+
+    {% if is_training_round  %} <p style="color:salmon;"><b>Esta es un ronda de entrenamiento! Luego de presionar 'Siguiente' por favor lea la información mostrada la información presentada en el apartado noticias.<!--, the score will not count towards your final score!--></b></p> {% endif %}
+
+    {% next_button %}
+
+{% endblock %}
+
+{% block scripts %}
+<!-- Write scripts in here! -->
+<!-- Load custom javascripts from static files -->
+<script src="{% static "ZTS/start_controller.js" %}"></script>
+{% endblock %}
